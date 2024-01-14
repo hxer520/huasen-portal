@@ -5,7 +5,7 @@ name: Build
 on:
   push:
     branches:
-      - MAIN
+      - Mmain
 jobs:
   release:
     name: Build Website
@@ -34,3 +34,9 @@ jobs:
         with:
           name: Home
           path: dist
+          
+  - name: 运行项目
+        uses: npm run serve
+
+
+          
